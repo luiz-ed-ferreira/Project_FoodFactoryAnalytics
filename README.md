@@ -1,9 +1,9 @@
-# Project Adventure Works e-commerce - Indicium AI's Analytics Engineer Certification
+# Project Food Factory - Comunidados November 2026 Data Analysis Challenge
 
 ### Project Overview
 
 <p align="center">
-  <img src="img/comunidados_logo.png" alt="Comunidados" height="200" weight="300">
+  <img src="img/comunidados_logo.png" alt="Comunidados Logo" height="200" weight="300">
 </p>
 
 > TBD
