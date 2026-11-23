@@ -1,0 +1,19 @@
+#Virtual environments
+.venv/
+.venv_food/
+venv/
+
+#Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+#Jupyter Notebooks
+.ipynb_checkpoints/
+
+#Datasets
+data/

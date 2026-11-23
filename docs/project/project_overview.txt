@@ -1,0 +1,44 @@
+PROJETO DO MÊS 01 · OEE DE UMA FÁBRICA DE ALIMENTOS
+Comunidados
+
+Esta pasta é a base do projeto. O que fazer com ela está no guia em PDF
+("Projeto do Mês 01 - OEE da fábrica.pdf"), que traz o cenário, os requisitos,
+a arquitetura, as regras e os resultados esperados.
+
+A empresa (Vale Norte Alimentos) e todos os dados são fictícios, gerados por simulação.
+
+
+O QUE TEM AQUI
+
+base/
+  cadastros/                 ERP, arquivo único
+    linhas.csv               4 linhas de produção e o horário do turno
+    produtos.csv             11 produtos, com peso e velocidade nominal
+    motivos_parada.csv       9 motivos de parada
+  mes/
+    ordens_producao/         MES, um arquivo por dia (+ 2 arquivos de reenvio)
+    paradas/                 MES, um arquivo por dia
+  qualidade/
+    inspecoes/               Laboratório, um arquivo por dia
+  iot/
+    sensores/                Sensores das linhas, um arquivo por dia (JSON Lines)
+
+README_modelo.md             Modelo para o README do seu repositório
+
+
+O QUE SABER ANTES DE ABRIR
+
+- Período: 02 a 14/11/2026. Domingo (08/11) não tem produção nem arquivo.
+- CSV separado por ponto e vírgula (;), em UTF-8.
+- Decimal com vírgula nas inspeções (141,3). Nos sensores, decimal com ponto.
+- Datas do MES e do laboratório: dia/mês/ano, em horário de Brasília.
+- Sensores: campo ts em UTC (termina com Z). Brasília = UTC menos 3 horas.
+- O nome do arquivo traz o dia de produção (horário de Brasília).
+- A base tem problemas colocados de propósito. Achar e tratar faz parte do projeto.
+
+
+SEM PRAZO E SEM AVALIAÇÃO
+
+O projeto é para a sua evolução. Faça no seu ritmo, com a ferramenta que quiser,
+e confira os seus números com os resultados esperados do guia.
+Terminou? Compartilhe o repositório e um aprendizado no grupo do Comunidados.
