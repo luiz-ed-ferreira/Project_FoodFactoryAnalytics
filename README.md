@@ -1,6 +1,6 @@
 # Project Food Factory – Comunidados November 2026 Data Analysis Challenge
 
-## Project Overview
+### Project Overview
 
 <p align="center">
   <img src="img/comunidados_logo.png" alt="Comunidados Logo" height="200" width="300">
@@ -12,14 +12,14 @@
 
 > The project covers the complete data pipeline, from raw data ingestion and data quality validation to analytical datasets and interactive dashboards.
 
-## Business Questions
+### Business Questions
 
 1. What is the Overall Equipment Effectiveness (OEE) of each production line?
 2. Which downtime reasons account for the greatest production losses?
 3. Which products have the highest rejection rates, and how much excess product weight is generated?
 4. How much machine downtime remains unreported in the production system?
 
-## Project Status & Improvements
+### Project Status & Improvements
 
 In Progress
 
@@ -35,7 +35,7 @@ In Progress
 - [ ] Interactive Streamlit dashboard.
 - [ ] Documentation and final project review.
 
-## Project Scope
+### Project Scope
 
 - Production performance monitoring across four packaging lines (L1–L4).
 - Availability, Performance, and Quality (OEE) calculations.
@@ -47,11 +47,11 @@ In Progress
 
 **Analysis Period:** November 2–14, 2026.
 
-## Criterion
+### Criterion
 
 > The project is structured around tree levels of technical complexity.
 
-### Basic Level
+#### Basic Level
 
 - Implement a Medallion Architecture (Bronze, Silver, and Gold).
 - Ingest all source files while preserving original data, filenames, and ingestion timestamps.
@@ -64,7 +64,7 @@ In Progress
 - Implement a fixed pipeline execution sequence with execution logs.
 - Develop an interactive Streamlit dashboard featuring an OEE monitoring panel, downtime Pareto chart, and quality report.
 
-### Intermediate Level
+#### Intermediate Level
 
 - Implement a Medallion Architecture (Bronze, Silver, and Gold).
 - Ingest and consolidate seven datasets from MES, Laboratory, IoT, and ERP systems.
@@ -78,7 +78,7 @@ In Progress
 - Ensure idempotent processing, preventing duplicate records across pipeline executions.
 - Implement data quality tests for uniqueness, mandatory fields, and referential integrity.
 
-### Advanced Level
+#### Advanced Level
 
 - Integrate IoT sensor readings with production and downtime records.
 - Convert UTC timestamps into Brasília local time.
@@ -87,7 +87,7 @@ In Progress
 - Orchestrate pipeline execution with execution logs.
 - Investigate the relationship between machine vibration patterns and mechanical failures.
 
-## Data Sources
+### Data Sources
 
 > The project uses seven datasets distributed across four operational systems.
 
@@ -103,14 +103,14 @@ In Progress
 
 > The dataset covers four packaging lines, producing biscuits, pasta, and powdered chocolate products.
 
-### Data Processing Considerations
+#### Data Processing Considerations
 
 - Brazilian data format: semicolon-separated CSV files, decimal commas, and day/month/year dates.
 - Different time zones: MES and laboratory records use Brasília time, while IoT sensor timestamps are in UTC.
 - Daily files: operational datasets are delivered as separate daily files, while ERP registries are provided as consolidated files.
 - File resubmissions: some MES production order files were corrected and resent, requiring version management.
 
-## Project Architecture
+### Project Architecture
 
 ```text
 Project_FoodFactoryAnalytics/
@@ -130,14 +130,14 @@ Project_FoodFactoryAnalytics/
 
 . *The project structure will evolve as the data engineering and analytics components are implemented.*
 
-## Prerequisites & Software
+### Prerequisites & Software
 
 - Windows 11 with WSL2 (Linux/Ubuntu).
 - Python 3.12.3.
 
 > Attention! Consult the requirements.txt file for more information about python libraries used.
 
-## Collaborators
+### Collaborators
 
 <table>
   <tr>
