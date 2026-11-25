@@ -132,8 +132,12 @@ Project_FoodFactoryAnalytics/
 
 ### Prerequisites & Software
 
-- Windows 11 with WSL2 (Linux/Ubuntu).
-- Python 3.12.3.
+- Windows 11 with WSL2 (Linux/Ubuntu)
+- Python 3.12.3
+- PostgreSQL version 18.6
+- Databricks Free Edition
+- Databricks Jobs
+- Delta Lake
 
 > Attention! Consult the requirements.txt file for more information about python libraries used.
 
